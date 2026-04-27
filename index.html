@@ -5,10 +5,22 @@
   <title>Кофейня</title>
 
   <style>
+   .fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
     body {
       margin: 0;
       font-family: Arial;
-     background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') no-repeat center/cover;
+   background: linear-gradient(135deg, #1c1c1c, #3a2b1f);
       color: white;
       text-align: center;
     }
@@ -37,7 +49,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
-  box-shadow: 0 0 20px rgba(255,165,0,0.6);
+box-shadow: 0 5px 15px rgba(255, 165, 0, 0.3);
 }
 
 button:hover {
@@ -46,9 +58,10 @@ button:hover {
 }
 
     button:hover {
-      background: #ff9800;
-      transform: scale(1.05);
-    }
+      button:hover {
+  background: #ff9800;
+  transform: scale(1.05);
+}
 
     .section {
       padding: 60px 20px;
@@ -100,7 +113,7 @@ button:hover {
 
 <body>
 <div class="overlay"></div>
-<div class="container">
+<div class="container fade-in">
   <h1>Лучшая кофейня ☕</h1>
   <p>Авторский кофе с доставкой за 15 минут</p>
 
@@ -129,7 +142,24 @@ button:hover {
     </div>
   </div>
 </div>
+<h2>Почему выбирают нас</h2>
 
+<div class="menu">
+  <div class="card">
+    <h3>☕ Качественные зерна</h3>
+    <p>Только отборный кофе</p>
+  </div>
+
+  <div class="card">
+    <h3>⚡ Быстрая доставка</h3>
+    <p>За 20 минут</p>
+  </div>
+
+  <div class="card">
+    <h3>❤️ Любовь к делу</h3>
+    <p>Готовим с душой</p>
+  </div>
+</div>
 <div class="section">
   <h2>О нас</h2>
   <p>Мы готовим лучший кофе в городе и делаем людей счастливее ❤️</p>
