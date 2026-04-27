@@ -102,6 +102,26 @@ body::before {
         transform: translateY(0);
       }
     }
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  width: 160px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
   </style>
 </head>
 
@@ -118,7 +138,7 @@ body::before {
 
  <div class="section">
   <h2>Наше меню</h2>
-
+<div class="menu">
   <div class="menu">
     <div class="card">
       <h3>Эспрессо</h3>
