@@ -27,16 +27,23 @@
       opacity: 0.8;
     }
 
+
     button {
-      margin-top: 20px;
-      padding: 15px 30px;
-      font-size: 18px;
-      background: orange;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  background: linear-gradient(45deg, orange, gold);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(255,165,0,0.6);
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255,165,0,1);
+}
 
     button:hover {
       background: #ff9800;
@@ -75,13 +82,27 @@
   z-index: -1;
 }
   </style>
+ .container {
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 </head>
 
 <body>
 <div class="overlay"></div>
 <div class="container">
   <h1>Лучшая кофейня ☕</h1>
-  <p>Свежий кофе каждый день</p>
+  <p>Авторский кофе с доставкой за 15 минут</p>
 
   <a href="https://t.me/@yrSsof" target="_blank">
     <button>Заказать кофе</button>
